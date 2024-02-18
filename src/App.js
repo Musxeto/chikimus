@@ -1,9 +1,10 @@
 import './App.css';
-
+import RandomQuote from './Components/RandomQuote';
 function App() {
+  
   return (
     <div className="App">
-      hello world
+      <RandomQuote />
     </div>
   );
 }
