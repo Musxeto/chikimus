@@ -9,10 +9,6 @@ function RandomQuote() {
     setRandomIndex(newIndex);
   };
 
-  useEffect(() => {
-    getRandomQuote();
-  }, []);
-
   const renderRandomQuote = () => {
     if (randomIndex !== null) {
       const randomQuote = quotes[randomIndex - 1];
