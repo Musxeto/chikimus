@@ -5,8 +5,8 @@ body {
 
 .App {
   text-align: center;
-  background-image: url('./Assets/team7.jpg');
-  background-size: calc(100% + 50px);
+  background-color: yellow;
+  background-size: cover !important;
   background-position: center;
   background-attachment: fixed; 
   height: 100vh;
