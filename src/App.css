@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  background-image: url('./Assets/team7.jpg');
+  background-size: calc(100% + 50px);
+  background-position: center;
+  background-attachment: fixed; 
+  height: 100vh;
+}
