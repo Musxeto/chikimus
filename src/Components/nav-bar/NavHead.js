@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg">
       <div className="container logo">
         <a className="navbar-brand mx-auto" href="#">
-          <img src="../" />
+          <img src="/chikimus-logo.png" alt="Chikimus Logo" />
         </a>
       </div>
     </nav>
