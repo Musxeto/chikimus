@@ -12,15 +12,19 @@ body {
 .theme-selector {
   text-align: center;
   margin: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   border-radius: 50px;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .label {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-bottom: 10px;
   font-weight: 200;
+  background-color:  rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  padding: 4px;
+  border-radius: 10px;
 }
 
 .anime-logos {
@@ -45,3 +49,17 @@ body {
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 400px) {
+  .label {
+    font-size: 0.7rem;
+  }
+
+  .anime-logos img {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .label {
+    font-size: 0.9rem;
+  }
+}

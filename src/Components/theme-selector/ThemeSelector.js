@@ -7,7 +7,7 @@ const ThemeSelector = () => {
       <div className="row justify-content-center">
         <div className="col-lg-11">
           <div className="theme-selector">
-            <p className="label">SWITCH THEME</p>
+            <p className="label animated-text">S w i t c h T h e m e</p>
             <div className="anime-logos">
               <a href="/naruto">
                 <img
@@ -17,17 +17,24 @@ const ThemeSelector = () => {
                 />
               </a>
               <a href="/jjk">
-                <img className="img-fluid" src="/jjk-logo.png" alt="JJK Logo" />
+                <img
+                  className="img-fluid"
+                  style={{ marginTop: "13px" }}
+                  src="/jjk-logo.png"
+                  alt="JJK Logo"
+                />
               </a>
               <a href="/bleach">
                 <img
                   className="img-fluid"
                   src="/bleach-logo.png"
-                  alt="One Piece Logo"
+                  alt="Bleach Logo"
+                  style={{ marginTop: "-10px" }}
                 />
               </a>
               <a href="/demonslayer">
                 <img
+                  style={{ marginTop: "-5px" }}
                   className="img-fluid"
                   src="/demonslayer-logo.png"
                   alt="Demon Slayer Logo"

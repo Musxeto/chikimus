@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgba(0, 0, 0, 0.1); /* Adjust the alpha value for transparency */
+  background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   z-index: 1;
 }
