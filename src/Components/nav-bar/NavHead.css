@@ -5,7 +5,7 @@
 }
 
 .logo {
-  width: 20rem; 
+  width: 15rem; 
   height: auto;
 }
 
@@ -14,4 +14,44 @@
   font-size: 1.5rem;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    width: 100%;
+  }
+  
+  .logo {
+    width: 12rem; 
+    height: auto;
+  }
+  
+  .navbar-brand {
+    color: #ffffff !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.1); /* Adjust the alpha value for transparency */
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    width: 100%;
+  }
+  
+  .logo {
+    width: 8rem; 
+    height: auto;
+  }
+  
+  .navbar-brand {
+    color: #ffffff !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+  }
 }
