@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import quotes from './quotes';
+import React, { useState } from "react";
+import quotes from "./quotes";
 
 function NameQuote() {
   const [randomQuote, setRandomQuote] = useState(null);
-  const [name, setName] = useState('');
+  const [anime, setAnime] = useState("");
   const [clicked, setClicked] = useState(false);
 
-  const getRandomQuoteByName = () => {
+  const getRandomQuoteByAnime = () => {
     let attempts = 0;
     const maxAttempts = quotes.length;
 
     while (attempts < maxAttempts) {
       const randomIndex = Math.floor(Math.random() * quotes.length);
-      if (quotes[randomIndex].name.toLowerCase() === name.toLowerCase()) {
+      if (quotes[randomIndex].anime.toLowerCase() === anime.toLowerCase()) {
         setRandomQuote(quotes[randomIndex]);
         return;
       }
@@ -23,33 +23,35 @@ function NameQuote() {
   };
 
   const handleInputChange = (event) => {
-    setName(event.target.value);
+    setAnime(event.target.value);
   };
 
   const generateQuote = () => {
-    getRandomQuoteByName();
+    getRandomQuoteByAnime();
     setClicked(true);
   };
 
   const renderRandomQuote = () => {
-    if (!clicked) return; // Using !clicked instead of clicked === false
+    if (!clicked) return;
     if (randomQuote !== null) {
       return (
         <div>
-          <h3>{randomQuote.name} ({randomQuote.anime})</h3>
+          <h3>
+            {randomQuote.name} ({randomQuote.anime})
+          </h3>
           <h2>{randomQuote.quote}</h2>
         </div>
       );
     }
-    return <p>No quotes found for this character.</p>;
+    return <p>No quotes found for this anime.</p>;
   };
-  
+
   return (
     <div>
       <input
-        type='text'
-        placeholder='enter character name'
-        value={name}
+        type="text"
+        placeholder="enter anime name"
+        value={anime}
         onChange={handleInputChange}
       />
       <button onClick={generateQuote}>Get Random Quote</button>
