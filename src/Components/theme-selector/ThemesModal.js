@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCog } from "@fortawesome/free-solid-svg-icons";
+import "./ThemesModal.css";
 
 function ThemesModal() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -6,20 +9,22 @@ function ThemesModal() {
   const openModal = () => {
     setIsModalOpen(true);
   };
+
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
   return (
     <div>
-      <button className="button-funny" onClick={openModal}>
-        S W I T C H T H E M E
+      <button className="button-gear" onClick={openModal}>
+        <FontAwesomeIcon icon={faCog} className="gear-icon" />
       </button>
 
       {isModalOpen && (
         <div className="Modal">
           <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-11">
+            <div>
+              <div>
                 <div className="theme-selector">
                   <p className="label animated-text">S w i t c h T h e m e</p>
                   <div className="anime-logos">
