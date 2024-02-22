@@ -16,7 +16,7 @@
   
   .gear-icon {
     font-size: 2rem; /* Adjust the size as needed */
-    color: #8f8f8f; /* Set the color to your preference */
+    color: rgba(255, 255, 255, 0.4); /* Set the color to your preference */
     transition: transform 0.3s ease-in-out; /* Add a transition for smooth rotation */
   }
   

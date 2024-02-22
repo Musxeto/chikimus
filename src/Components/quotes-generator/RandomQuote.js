@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import quotes from './quotes';
+import React, { useState, useEffect } from "react";
+import quotes from "./quotes";
 
 function RandomQuote() {
   const [randomIndex, setRandomIndex] = useState(null);
@@ -14,7 +14,9 @@ function RandomQuote() {
       const randomQuote = quotes[randomIndex - 1];
       return (
         <div>
-          <h3>{randomQuote.name} ({randomQuote.anime})</h3>
+          <h3>
+            {randomQuote.name} ({randomQuote.anime})
+          </h3>
           <h2>{randomQuote.quote}</h2>
         </div>
       );
