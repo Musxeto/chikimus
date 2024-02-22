@@ -1,6 +1,5 @@
 import React from "react";
 import "./NavHead.css";
-import ThemeSelector from "../theme-selector/ThemeSelector";
 
 const Navbar = () => {
   return (
@@ -16,7 +15,6 @@ const Navbar = () => {
           </a>
         </div>
       </nav>
-      <ThemeSelector />
     </>
   );
 };
