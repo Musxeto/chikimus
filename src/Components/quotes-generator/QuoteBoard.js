@@ -55,7 +55,7 @@ function QuoteBoard() {
   };
 
   const handleDoneClick = () => {
-    setSelectedOption(null);
+    setSelectedOption("random");
     const randomIndex = Math.floor(Math.random() * quotes.length);
     setQuote(quotes[randomIndex]);
   };
