@@ -15,12 +15,12 @@
   }
   
   .gear-icon {
-    font-size: 2rem; /* Adjust the size as needed */
-    color: rgba(255, 255, 255, 0.4); /* Set the color to your preference */
-    transition: transform 0.3s ease-in-out; /* Add a transition for smooth rotation */
+    font-size: 2rem; 
+    color: rgba(255, 255, 255, 0.4); 
+    transition: transform 0.3s ease-in-out; 
   }
   
   .gear-icon:hover {
-    transform: rotate(360deg); /* Rotate the gear on hover */
+    transform: rotate(360deg); 
   }
   
