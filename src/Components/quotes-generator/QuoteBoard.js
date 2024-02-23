@@ -65,35 +65,46 @@ function QuoteBoard() {
   }, [inputValue, selectedOption]);
 
   return (
-    <div>
-      <div>
-        <h3>
-          {quote.name} {quote.anime}
-        </h3>
-        <h2>{quote.quote}</h2>
-      </div>
-
-      {(selectedOption === "anime" || selectedOption === "character") && (
-        <div>
-          <input
-            type="text"
-            placeholder={`Enter ${
-              selectedOption === "anime" ? "anime" : "character"
-            } name`}
-            value={inputValue}
-            onChange={handleInputChange}
-          />
-          <button onClick={handleDoneClick}>Done</button>
+    <div className="Quotes-Box container">
+      <div className="quote-container container mt-5">
+        <div className="quote-box p-4 border rounded">
+          <h1>A N I M E Q U O T E S G E N E R A T O R</h1>
+          <h2 className="mb-3">{quote.quote}</h2>
+          <p className="mb-0">{quote.name}</p>
+          <p className="mb-0">{quote.anime}</p>
         </div>
-      )}
 
-      <div style={{ marginTop: "10px" }}>
-        <button onClick={() => handleOptionClick("anime")}>
-          Fetch by Anime
-        </button>
-        <button onClick={() => handleOptionClick("character")}>
-          Fetch by Character
-        </button>
+        {(selectedOption === "anime" || selectedOption === "character") && (
+          <div className="mt-3">
+            <input
+              type="text"
+              className="form-control"
+              placeholder={`Enter ${
+                selectedOption === "anime" ? "anime" : "character"
+              } name`}
+              value={inputValue}
+              onChange={handleInputChange}
+            />
+            <button className="btn btn-primary mt-2" onClick={handleDoneClick}>
+              Done
+            </button>
+          </div>
+        )}
+
+        <div className="mt-3">
+          <button
+            className="btn btn-secondary me-2"
+            onClick={() => handleOptionClick("anime")}
+          >
+            Fetch by Anime
+          </button>
+          <button
+            className="btn btn-secondary"
+            onClick={() => handleOptionClick("character")}
+          >
+            Fetch by Character
+          </button>
+        </div>
       </div>
     </div>
   );

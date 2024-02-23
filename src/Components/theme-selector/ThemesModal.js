@@ -71,7 +71,9 @@ function ThemesModal() {
               </div>
             </div>
           </div>
-          <button onClick={closeModal}>Close Modal</button>
+          <button className="btn btn-secondary" onClick={closeModal}>
+            Close Modal
+          </button>
         </div>
       )}
     </div>

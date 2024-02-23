@@ -53,6 +53,65 @@ body {
   transform: scale(1.1);
 }
 
+
+
+/* Add your modern styling here */
+
+.quote-container {
+  text-align: center;
+}
+
+.quote-box {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #333;
+  border: 1px solid #222;
+  border-radius: 10px;
+}
+
+.quote-box h1 {
+  font-size: 24px;
+  color: #ffffff;
+  border-bottom: #fff solid 1px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.quote-box h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.input-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-container .form-control {
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #333;
+  border: 1px solid #222;
+}
+
+ .btn-secondary {
+  background-color: #6c757d;
+  border: 1px solid #6c757d;
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 400px) {
   .label {
     font-size: 0.7rem;
@@ -67,11 +126,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #fff;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+
   text-align: center;
   min-width: max-content;
 }
@@ -80,5 +137,20 @@ body {
 @media screen and (max-width: 1000px) {
   .label {
     font-size: 0.9rem;
+  }
+  .quote-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .quote-box h1 {
+    font-size: 18px;
+  }
+  
+  .quote-box h2 {
+    font-size: 16px;
+    margin-bottom: 13px;
   }
 }
