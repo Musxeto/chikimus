@@ -9,14 +9,20 @@ body {
   background-color: #222;
   color: #fff;
 }
+.Modal{
+  background-color: #222;
+  border-radius: 50px;
+  border: #333 1px solid;
+}
 .theme-selector {
   text-align: center;
   margin: 10px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 20px;
+  border: #525151 2px solid;
   border-radius: 50px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .btn-custom {
   margin-top: 200px !important;
@@ -25,7 +31,7 @@ body {
   font-size: 1.3rem;
   margin-bottom: 10px;
   font-weight: 200;
-  background-color:  rgba(0, 0, 0, 0.3);
+  background-color:  rgba(0, 0, 0, 0.4);
   display: inline-block;
   padding: 4px;
   border-radius: 10px;
