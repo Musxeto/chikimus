@@ -24,12 +24,3 @@
     transform: rotate(360deg); /* Rotate the gear on hover */
   }
   
-  .tab-message {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #fff;
-    padding: 8px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
