@@ -4,11 +4,8 @@ import quotes from "./quotes";
 function QuoteBoard() {
   const [selectedOption, setSelectedOption] = useState(null);
   const [inputValue, setInputValue] = useState("");
-  const [quote, setQuote] = useState({
-    quote: "quote",
-    name: "character",
-    anime: "anime",
-  });
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  const [quote, setQuote] = useState(quotes[randomIndex]);
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
@@ -71,18 +68,9 @@ function QuoteBoard() {
     <div>
       <div>
         <h3>
-          {quote.name} ({quote.anime})
+          {quote.name} {quote.anime}
         </h3>
         <h2>{quote.quote}</h2>
-      </div>
-
-      <div>
-        <button onClick={() => handleOptionClick("anime")}>
-          Fetch by Anime
-        </button>
-        <button onClick={() => handleOptionClick("character")}>
-          Fetch by Character
-        </button>
       </div>
 
       {(selectedOption === "anime" || selectedOption === "character") && (
@@ -98,6 +86,15 @@ function QuoteBoard() {
           <button onClick={handleDoneClick}>Done</button>
         </div>
       )}
+
+      <div style={{ marginTop: "10px" }}>
+        <button onClick={() => handleOptionClick("anime")}>
+          Fetch by Anime
+        </button>
+        <button onClick={() => handleOptionClick("character")}>
+          Fetch by Character
+        </button>
+      </div>
     </div>
   );
 }
