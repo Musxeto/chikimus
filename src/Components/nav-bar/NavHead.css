@@ -38,8 +38,8 @@
 @media screen and (max-width: 800px) {
   .navbar {
     background-color: rgba(0, 0, 0, 0.1); /* Adjust the alpha value for transparency */
-    
-    
+    backdrop-filter: blur(10px);
+    z-index: 1;
     width: 100%;
   }
   

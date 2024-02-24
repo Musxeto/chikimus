@@ -1,7 +1,7 @@
 import React from "react";
 import QuoteBoard from "../quotes-generator/QuoteBoard";
 
-function QuotesBody({ mode }) {
+function QuotesBody() {
   return (
     <div className="quotes-body-container">
       <div className="left-column"></div>

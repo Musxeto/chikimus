@@ -183,9 +183,9 @@ body {
   .theme-selector {
     text-align: center;
     margin: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
     border-radius: 30px;
   }
 
@@ -194,7 +194,7 @@ body {
   }
 
   .anime-logos img {
-    width: 50px;
+    width: 60px;
   }
 }
 .Modal {
