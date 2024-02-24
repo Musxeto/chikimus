@@ -147,7 +147,7 @@ body {
 }
 
 .center-column {
-  flex: 2; /* Take up the remaining available space */
+  flex: auto; /* Take up the remaining available space */
 }
 
 
@@ -164,6 +164,37 @@ body {
 
   .anime-logos img {
     width: 60px;
+  }
+}
+.Modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 8px;
+
+  text-align: center;
+  min-width: max-content;
+}
+
+
+@media screen and (max-width: 600px) {
+  .theme-selector {
+    text-align: center;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+  }
+
+  .label {
+    font-size: 0.7rem;
+  }
+
+  .anime-logos img {
+    width: 50px;
   }
 }
 .Modal {
