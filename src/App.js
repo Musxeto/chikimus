@@ -1,7 +1,7 @@
 import Navbar from "./Components/nav-bar/NavHead";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import Home from "./Home";
-
+import Naruto from "./Naruto";
 function App() {
   return (
     <>
