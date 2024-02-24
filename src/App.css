@@ -135,6 +135,21 @@ body {
   background-color: #6c757d;
   border: 1px solid #6c757d;
 }
+.quotes-body-container {
+  display: flex;
+}
+
+.left-column,
+.right-column {
+  flex: 1; 
+}
+
+.center-column {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 

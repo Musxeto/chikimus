@@ -11,7 +11,7 @@ function App() {
       <div>
         <Navbar />
         <ThemesModal />
-        <QuotesBody />
+        <QuotesBody mode={"op"} />
       </div>
     </div>
   );
