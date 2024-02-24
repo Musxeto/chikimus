@@ -1,17 +1,23 @@
+import React, { useState } from "react";
 import "./App.css";
 import QuotesBody from "./Components/main-body/QuotesBody";
 import Navbar from "./Components/nav-bar/NavHead";
-import QuoteBoard from "./Components/quotes-generator/QuoteBoard";
-import ThemeSelector from "./Components/theme-selector/ThemeSelector";
 import ThemesModal from "./Components/theme-selector/ThemesModal";
 
 function App() {
+  const [currentTheme, setCurrentTheme] = useState("");
+
+  const handleThemeChange = (selectedTheme) => {
+    setCurrentTheme(selectedTheme);
+  };
+
   return (
     <div className="App">
       <div>
         <Navbar />
-        <ThemesModal />
+        <ThemesModal onThemeChange={handleThemeChange} />
         <QuotesBody />
+        <p>Theme: {currentTheme}</p>
       </div>
     </div>
   );

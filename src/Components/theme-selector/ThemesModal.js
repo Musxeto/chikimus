@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCog } from "@fortawesome/free-solid-svg-icons";
 import "./ThemesModal.css";
 
-function ThemesModal() {
+function ThemesModal({ onThemeChange }) {
   const [theme, setTheme] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -18,8 +18,9 @@ function ThemesModal() {
   useEffect(() => {
     if (theme) {
       closeModal();
+      onThemeChange(theme);
     }
-  }, [theme]);
+  }, [theme, onThemeChange]);
 
   return (
     <div>
