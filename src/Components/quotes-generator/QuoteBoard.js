@@ -70,7 +70,7 @@ function QuoteBoard() {
     <div className="Quotes-Box container">
       <div className="quote-container container mt-5">
         <div className="quote-box p-4 border rounded">
-          <h1>A N I M E - Q U O T E S - G E N E R A T O R</h1>
+          <h1>ANIME QUOTES GENERATOR</h1>
           <h2 className="mb-3">{quote.quote}</h2>
           <p className="mb-0">{quote.name}</p>
           <p className="mb-0">{quote.anime}</p>
