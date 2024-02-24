@@ -2,6 +2,11 @@ import Navbar from "./Components/nav-bar/NavHead";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import Home from "./Home";
 import Naruto from "./Naruto";
+import JJK from "./JJK";
+import Bleach from "./Bleach";
+import Evangelion from "./Evangelion";
+import DemonSlayer from "./DemonSlayer";
+
 function App() {
   return (
     <>
