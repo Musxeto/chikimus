@@ -1,22 +1,22 @@
-import "./App.css";
-import QuotesBody from "./Components/main-body/QuotesBody";
 import Navbar from "./Components/nav-bar/NavHead";
-import QuoteBoard from "./Components/quotes-generator/QuoteBoard";
-import ThemeSelector from "./Components/theme-selector/ThemeSelector";
-import ThemesModal from "./Components/theme-selector/ThemesModal";
-import { BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import Home from "./Home";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <div>
-          <Navbar />
-          <ThemesModal />
-          <QuotesBody />
-        </div>
-      </div>
-    </Router>
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/naruto" element={<Naruto />} />
+          <Route path="/jjk" element={<JJK />} />
+          <Route path="/bleach" element={<Bleach />} />
+          <Route path="/demonslayer" element={<DemonSlayer />} />
+          <Route path="/evangelion" element={<Evangelion />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
