@@ -4,16 +4,19 @@ import Navbar from "./Components/nav-bar/NavHead";
 import QuoteBoard from "./Components/quotes-generator/QuoteBoard";
 import ThemeSelector from "./Components/theme-selector/ThemeSelector";
 import ThemesModal from "./Components/theme-selector/ThemesModal";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <div>
-        <Navbar />
-        <ThemesModal />
-        <QuotesBody mode={"op"} />
+    <Router>
+      <div className="App">
+        <div>
+          <Navbar />
+          <ThemesModal />
+          <QuotesBody />
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
