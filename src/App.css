@@ -135,21 +135,21 @@ body {
   background-color: #6c757d;
   border: 1px solid #6c757d;
 }
+
 .quotes-body-container {
   display: flex;
+  align-items: stretch; /* Adjust as needed */
 }
 
 .left-column,
 .right-column {
-  flex: 1; 
+  flex: 1; /* Allow these columns to be their natural width */
 }
 
 .center-column {
-  flex: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex: 2; /* Take up the remaining available space */
 }
+
 
 
 

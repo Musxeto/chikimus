@@ -8,14 +8,7 @@ function QuotesBody({ mode }) {
       <div className="center-column">
         <QuoteBoard />
       </div>
-      <div className="right-column">
-        <img
-          src="/character-op-right.png"
-          alt="RIGHT CHARACTER"
-          className="img-fluid"
-          style={{ height: "50%" }}
-        />
-      </div>
+      <div className="right-column"></div>
     </div>
   );
 }
