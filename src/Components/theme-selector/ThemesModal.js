@@ -72,7 +72,7 @@ function ThemesModal() {
             </div>
           </div>
           <button className="btn btn-secondary" onClick={closeModal}>
-            Close Modal
+            Close
           </button>
         </div>
       )}

@@ -127,7 +127,10 @@ body {
   background-color: #333;
   border: 1px solid #222;
 }
-
+.btn-primary:hover {
+  background-color: #585858;
+  border: 1px solid #333;
+}
  .btn-secondary {
   background-color: #6c757d;
   border: 1px solid #6c757d;
