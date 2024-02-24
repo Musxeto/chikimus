@@ -12,7 +12,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className={`App ${currentTheme}`}>
       <div>
         <Navbar />
         <ThemesModal onThemeChange={handleThemeChange} />

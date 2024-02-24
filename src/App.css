@@ -230,3 +230,18 @@ body {
     margin-bottom: 13px;
   }
 }
+.App.naruto {
+  background-color: yellow; /* Reddish background for Naruto theme */
+}
+.App.bleach {
+  background-color: orangered; 
+}
+.App.evangelion {
+  background-color: red;
+}
+.App.demonslayer {
+  background-color: green; 
+}
+.App.jjk {
+  background-color: darkslateblue;
+}
