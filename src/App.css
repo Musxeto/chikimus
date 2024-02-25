@@ -745,21 +745,275 @@ body {
   }
 }
 
+/* B L E A C H     T H E M E*/
 
-
-
-
-
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 .App.bleach {
-  background-color: orangered; 
+  background-image: url('https://www.wallpaperation.com/gallery/b/53-bleach-thousand-year-blood-war/Bleach-Thousand-Year-Blood-War-27.jpg');
+  background-size: cover; 
+  color: #fff;
 }
-.App.evangelion {
-  background-color: red;
+
+.App.bleach .navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
 }
+
+.App.bleach .Modal,
+.App.bleach body {
+  font-weight: lighter;
+  background-color: rgba(0, 0, 0, 0.3); /* Bleach theme background color for various elements */
+  color: #fff; /* Bleach theme text color */
+  border: black 1px solid; /* Bleach theme border color */
+}
+
+.App.bleach .theme-selector {
+  background-color: black; /* Bleach theme background color for various elements */
+  color: #fff;
+  border: black 1px solid;
+}
+
+.App.bleach .label {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 200;
+  background-color: rgba(253, 102, 47, 0.4);
+  border: black 1px solid;
+  display: inline-block;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.App.bleach .anime-logos img {
+  width: 200px; /* Adjusted width for anime logos */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.App.bleach .anime-logos img:hover {
+  transform: scale(1.1);
+}
+
+/* Add your modern styling here for Bleach theme */
+
+.App.bleach .Quotes-Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  border-radius: 50px;
+  background-color: rgba(255, 69, 0, 0.4); /* Orange color for Bleach theme */
+  max-width: max-content;
+}
+
+.App.bleach .quote-container {
+  text-align: center;
+}
+
+.App.bleach .quote-box {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #000; /* Bleach theme background color for quote box */
+  border: 1px solid #FFA500; /* Bleach theme border color for quote box */
+  border-radius: 10px;
+}
+
+.App.bleach .quote-box h1 {
+  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
+  color: #fff; /* Bleach theme text color for quote box header */
+  border-bottom: #FFA500 solid 1px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.App.bleach .quote-box h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.App.bleach .input-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App.bleach .form-control {
+  width: 200px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App.bleach .form-control:focus {
+  outline: none;
+  border: 1px solid #fff; 
+  box-shadow: 0 0 5px #fff;
+}
+
+.App.bleach .btn-primary {
+  background-color: #FFA500; /* Orange color for Bleach theme button background */
+  border: 1px solid #fff; /* Bleach theme border color for buttons */
+}
+
+.App.bleach .btn-primary:hover {
+  background-color: #D2691E; /* Darker orange on hover for Bleach theme button background */
+  border: 1px solid #fff; /* Bleach theme border color on hover */
+}
+
+.App.bleach .btn-secondary {
+  background-color: #000; /* Black color for Bleach theme button background */
+  border: 1px solid #fff; /* Bleach theme border color for buttons */
+}
+
+.App.bleach .btn-secondary:hover {
+  background-color: #333; /* Darker black on hover for Bleach theme button background */
+  border: 1px solid #fff; /* Bleach theme border color on hover */
+}
+
+.App.bleach .btn-tertiary {
+  background-color: #fff; /* White color for Bleach theme button background */
+  color: #000; /* Black color for text on Bleach theme button */
+  border: 1px solid #000; /* Black color for Bleach theme border color for buttons */
+}
+
+.App.bleach .btn-tertiary:hover {
+  background-color: #ddd; /* Lighter white on hover for Bleach theme button background */
+  border: 1px solid #ddd; /* Lighter white for Bleach theme border color on hover */
+}
+
+.App.bleach .footer {
+  padding: 20px 0;
+  background-color: #333; /* Dark black color for Bleach theme background color for footer */
+}
+
+.App.bleach .footer-links a {
+  text-decoration: none;
+}
+
+.App.bleach .footer-links img {
+  width: 100px; /* Adjusted width for footer links */
+}
+
+.App.bleach .footer-info p {
+  margin: 5px 0;
+}
+
+.App.bleach .btn-contribute {
+  background-color: #FFA500; /* Orange color for Bleach theme button background */
+  border: 1px solid #fff; /* Bleach theme border color for contribute button */
+}
+
+.App.bleach .btn-contribute:hover {
+  background-color: #D2691E; /* Darker orange on hover for Bleach theme button background */
+  border: 1px solid #fff; /* Bleach theme border color on hover */
+}
+
+/* Bleach theme responsiveness */
+
+@media screen and (max-width: 400px) {
+  .App.bleach .label {
+    font-size: 0.7rem;
+  }
+
+  .App.bleach .anime-logos img {
+    width: 60px;
+  }   
+  .App.bleach .Modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: max-content;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .App.bleach .theme-selector {
+    text-align: center;
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+  }
+
+  .App.bleach .label {
+    font-size: 0.7rem;
+  }
+
+  .App.bleach .anime-logos img {
+    width: 60px;
+  }
+  .App.bleach .Modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: max-content;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .App.bleach .label {
+    font-size: 0.9rem;
+  }
+  .App.bleach .quote-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .App.bleach .quote-box h1 {
+    font-size: 18px;
+  }
+  
+  .App.bleach .quote-box h2 {
+    font-size: 16px;
+    margin-bottom: 13px;
+  }
+}
+
+/*D E M O  N   S L A Y E R   T H E M E*/
+
 .App.demonslayer {
   background-color: green; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.App.evangelion {
+  background-color: red;
+}
+
