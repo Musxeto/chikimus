@@ -138,18 +138,45 @@ body {
 
 .quotes-body-container {
   display: flex;
-  align-items: stretch; /* Adjust as needed */
+  align-items: stretch; 
+  margin-bottom: 20vh;
 }
 
 .left-column,
 .right-column {
-  flex: 1; /* Allow these columns to be their natural width */
+  flex: 1; 
 }
 
 .center-column {
-  flex: auto; /* Take up the remaining available space */
+  flex: auto; 
 }
 
+.footer {
+  padding: 20px 0;
+  background-color: #1d1d1d;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+
+.footer-links img {
+  width: 100px; 
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+.btn-contribute {
+  background-color: #6c757d;
+  border: 1px solid #6c757d;
+}
+
+.btn-contribute:hover {
+  background-color: #585858;
+  border: 1px solid #333;
+}
 
 
 
@@ -230,9 +257,183 @@ body {
     margin-bottom: 13px;
   }
 }
+
+
+/* N A R U T O  T H E M E*/
+@import url('https://fonts.cdnfonts.com/css/ninja-naruto');
+
 .App.naruto {
-  background-color: yellow; /* Reddish background for Naruto theme */
+  background-color: #f4c542; /* Naruto theme background color */
+  font-family: 'Ninja Naruto', sans-serif;
+  color: #1d1d1d; /* Text color for better contrast */
 }
+
+.App.naruto .Modal,
+.App.naruto .theme-selector,
+.App.naruto body {
+  background-color: #333; /* Naruto theme background color for various elements */
+  color: #fff; /* Naruto theme text color */
+}
+
+.App.naruto .label {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 200;
+  background-color:  rgba(0, 0, 0, 0.4); /* Naruto theme background color for labels */
+  display: inline-block;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.App.naruto .anime-logos img {
+  width: 200px; /* Adjusted width for anime logos */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.App.naruto .anime-logos img:hover {
+  transform: scale(1.1);
+}
+
+/* Add your modern styling here for Naruto theme */
+
+.App.naruto .Quotes-Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  max-width: max-content;
+}
+
+.App.naruto .quote-container {
+  text-align: center;
+}
+
+.App.naruto .quote-box {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #333; /* Naruto theme background color for quote box */
+  border: 1px solid #222; /* Naruto theme border color for quote box */
+  border-radius: 10px;
+}
+
+.App.naruto .quote-box h1 {
+  font-size: 24px;
+  color: #ffffff; /* Naruto theme text color for quote box header */
+  border-bottom: #fff solid 1px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.App.naruto .quote-box h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.App.naruto .input-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App.naruto .form-control {
+  width: 200px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App.naruto .form-control:focus {
+  outline: none;
+  border: 1px solid #d7d7d7; 
+  box-shadow: 0 0 5px #d7d7d7;
+}
+
+.App.naruto .btn-primary,
+.App.naruto .btn-contribute {
+  background-color: #333; /* Naruto theme button background color */
+  border: 1px solid #222; /* Naruto theme border color for buttons */
+}
+
+.App.naruto .btn-primary:hover,
+.App.naruto .btn-contribute:hover {
+  background-color: #585858; /* Naruto theme button background color on hover */
+  border: 1px solid #333; /* Naruto theme border color on hover */
+}
+
+.App.naruto .footer {
+  padding: 20px 0;
+  background-color: #1d1d1d; /* Naruto theme background color for footer */
+}
+
+.App.naruto .footer-links a {
+  text-decoration: none;
+}
+
+.App.naruto .footer-links img {
+  width: 100px; /* Adjusted width for footer links */
+}
+
+.App.naruto .footer-info p {
+  margin: 5px 0;
+}
+
+.App.naruto .btn-contribute {
+  background-color: #333; /* Naruto theme button background color */
+  border: 1px solid #222; /* Naruto theme border color for contribute button */
+}
+
+.App.naruto .btn-contribute:hover {
+  background-color: #585858; /* Naruto theme button background color on hover */
+  border: 1px solid #333; /* Naruto theme border color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .App.bleach {
   background-color: orangered; 
 }

@@ -3,6 +3,7 @@ import "./App.css";
 import QuotesBody from "./Components/main-body/QuotesBody";
 import Navbar from "./Components/nav-bar/NavHead";
 import ThemesModal from "./Components/theme-selector/ThemesModal";
+import Footer from "./Components/footer/Footer";
 
 function App() {
   const [currentTheme, setCurrentTheme] = useState("");
@@ -18,6 +19,7 @@ function App() {
         <ThemesModal onThemeChange={handleThemeChange} />
         <QuotesBody />
         <p>Theme: {currentTheme}</p>
+        <Footer />
       </div>
     </div>
   );
