@@ -139,7 +139,7 @@ body {
 .quotes-body-container {
   display: flex;
   align-items: stretch; 
-  margin-bottom: 25vh;
+  margin-bottom: 50vh;
 }
 
 .left-column,
@@ -752,6 +752,7 @@ body {
 .App.bleach {
   background-image: url('https://www.wallpaperation.com/gallery/b/53-bleach-thousand-year-blood-war/Bleach-Thousand-Year-Blood-War-27.jpg');
   background-size: cover; 
+  background-position: right;
   color: #fff;
 }
 
@@ -1255,7 +1256,7 @@ body {
 
 .App.evangelion {
   background-image: url('https://preview.redd.it/ever-wanted-shinjis-iconic-chair-pose-as-a-desktop-bg-well-v0-ji7og7e5mmfa1.png?auto=webp&s=1d7163e4e059d504b79bb8edcdda50d2043d4a0c');
-  background-position: center;
+  background-position: top;
   background-size: cover;
   color: #fff;
   font-family: 'Roboto', sans-serif;
