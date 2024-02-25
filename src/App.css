@@ -994,9 +994,253 @@ body {
 
 /*D E M O  N   S L A Y E R   T H E M E*/
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
 .App.demonslayer {
-  background-color: green; 
+  background-image: url('https://static.vecteezy.com/system/resources/previews/025/695/688/non_2x/abstract-seamless-pattern-chessboard-green-and-black-background-great-for-print-fashion-clothing-fabric-pillow-bed-sheet-design-and-more-free-vector.jpg'); /* Replace 'YOUR_DEMON_SLAYER_IMAGE_URL' with the actual URL of your Demon Slayer-themed background image */
+  background-position: right top; /* Set background position to top right */
+  background-size: cover; /* Cover the entire container with the background image */
+  color: #fff;
 }
+
+.App.demonslayer .navbar {
+  background-color: black;
+  z-index: 1;
+}
+
+.App.demonslayer .Modal,
+.App.demonslayer body {
+  font-weight: lighter;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: rgba(104, 197, 170, 1) 1px solid; /* Light green color */
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+.App.demonslayer .theme-selector {
+  background-color: rgba(104, 197, 170, 1); /* Light green color */
+  color: #fff;
+  border: none;
+}
+
+.App.demonslayer .label {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 200;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: rgba(104, 197, 170, 1) 1px solid; /* Light green color */
+  display: inline-block;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.App.demonslayer .anime-logos img {
+  width: 200px; /* Adjusted width for anime logos */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.App.demonslayer .anime-logos img:hover {
+  transform: scale(1.1);
+}
+
+/* Add your modern styling here for Demon Slayer theme */
+
+.App.demonslayer .Quotes-Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.7); /* Green color for Demon Slayer theme */
+  max-width: max-content;
+}
+
+.App.demonslayer .quote-container {
+  text-align: center;
+}
+
+.App.demonslayer .quote-box {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #000; /* Demon Slayer theme background color for quote box */
+  border: 1px solid #00ff00; /* Demon Slayer theme border color for quote box */
+  border-radius: 10px;
+}
+
+.App.demonslayer .quote-box h1 {
+  font-size: 24px;
+  color: #fff; /* Demon Slayer theme text color for quote box header */
+  border-bottom: #ffffff solid 1px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.App.demonslayer .quote-box h2 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.App.demonslayer .input-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App.demonslayer .form-control {
+  width: 200px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App.demonslayer .form-control:focus {
+  outline: none;
+  border: 1px solid #fff; 
+  box-shadow: 0 0 5px #fff;
+}
+
+.App.demonslayer .btn-primary {
+  background-color: rgba(0, 0, 0, 0.8); /* Green color for Demon Slayer theme button background */
+  border: 1px solid #fff; /* Demon Slayer theme border color for buttons */
+}
+
+.App.demonslayer .btn-primary:hover {
+  background-color: rgba(0, 0, 0, 1); /* Darker green on hover for Demon Slayer theme button background */
+  border: 1px solid #fff; /* Demon Slayer theme border color on hover */
+}
+
+.App.demonslayer .btn-secondary {
+  background-color: #000; /* Black color for Demon Slayer theme button background */
+  border: 1px solid #fff; /* Demon Slayer theme border color for buttons */
+}
+
+.App.demonslayer .btn-secondary:hover {
+  background-color: #333; /* Darker black on hover for Demon Slayer theme button background */
+  border: 1px solid #fff; /* Demon Slayer theme border color on hover */
+}
+
+.App.demonslayer .btn-tertiary {
+  background-color: #fff; /* White color for Demon Slayer theme button background */
+  color: #000; /* Black color for text on Demon Slayer theme button */
+  border: 1px solid #000; /* Black color for Demon Slayer theme border color for buttons */
+}
+
+.App.demonslayer .btn-tertiary:hover {
+  background-color: #ddd; /* Lighter white on hover for Demon Slayer theme button background */
+  border: 1px solid #ddd; /* Lighter white for Demon Slayer theme border color on hover */
+}
+
+.App.demonslayer .footer {
+  padding: 20px 0;
+  background-color: #333; /* Dark black color for Demon Slayer theme background color for footer */
+}
+
+.App.demonslayer .footer-links a {
+  text-decoration: none;
+}
+
+.App.demonslayer .footer-links img {
+  width: 100px; /* Adjusted width for footer links */
+}
+
+.App.demonslayer .footer-info p {
+  margin: 5px 0;
+}
+
+.App.demonslayer .btn-contribute {
+  background-color: #00ff00; /* Green color for Demon Slayer theme button background */
+  border: 1px solid #fff; /* Demon Slayer theme border color for contribute button */
+}
+
+.App.demonslayer .btn-contribute:hover {
+  background-color: #008000; /* Darker green on hover for Demon Slayer theme button background */
+  border: 1px solid #fff; /* Demon Slayer theme border color on hover */
+}
+
+/* Demon Slayer theme responsiveness */
+
+@media screen and (max-width: 400px) {
+  .App.demonslayer .label {
+    font-size: 0.7rem;
+  }
+
+  .App.demonslayer .anime-logos img {
+    width: 60px;
+  }   
+  .App.demonslayer .Modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: max-content;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .App.demonslayer .theme-selector {
+    text-align: center;
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+  }
+
+  .App.demonslayer .label {
+    font-size: 0.7rem;
+  }
+
+  .App.demonslayer .anime-logos img {
+    width: 60px;
+  }
+  .App.demonslayer .Modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: max-content;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .App.demonslayer .label {
+    font-size: 0.9rem;
+  }
+  .App.demonslayer .quote-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .App.demonslayer .quote-box h1 {
+    font-size: 18px;
+  }
+  
+  .App.demonslayer .quote-box h2 {
+    font-size: 16px;
+    margin-bottom: 13px;
+  }
+}
+
 
 
 
