@@ -109,7 +109,6 @@ function ThemesModal({ onThemeChange }) {
               </div>
             </div>
           </div>
-          <h1>{theme}</h1>
           <button className="btn btn-secondary" onClick={closeModal}>
             Close
           </button>

@@ -139,7 +139,7 @@ body {
 .quotes-body-container {
   display: flex;
   align-items: stretch; 
-  margin-bottom: 20vh;
+  margin-bottom: 25vh;
 }
 
 .left-column,
@@ -260,26 +260,37 @@ body {
 
 
 /* N A R U T O  T H E M E*/
-@import url('https://fonts.cdnfonts.com/css/ninja-naruto');
+@import url("https://db.onlinewebfonts.com/c/73fedd912ba11f583a359ce4c2e742ed?family=Ninja+Naruto+V1");
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 .App.naruto {
-  background-color: #f4c542; /* Naruto theme background color */
-  font-family: 'Ninja Naruto', sans-serif;
-  color: #1d1d1d; /* Text color for better contrast */
+  background-image: url('https://wallpapers.com/images/hd/naruto-akatsuki-cloud-pattern-fjimoinnyc49halg.jpg');
+  font-family: "Ninja Naruto V1";
+  color: #fff;
 }
-
+.App.naruto .navbar{
+  font-family: "Ninja Naruto V1";
+  background-color:  black;
+}
 .App.naruto .Modal,
-.App.naruto .theme-selector,
 .App.naruto body {
-  background-color: #333; /* Naruto theme background color for various elements */
-  color: #fff; /* Naruto theme text color */
+  font-family: "Ninja Naruto V1";
+  font-weight: lighter;
+  background-color: #000000; /* Akatsuki theme background color for various elements */
+  color: #fff; /* Akatsuki theme text color */
 }
-
+.App.naruto .theme-selector{
+  
+  background-color: #1a0202; /* Akatsuki theme background color for various elements */
+  color: #fff;
+  border: #fff 1px solid;
+}
 .App.naruto .label {
+  
   font-size: 1.3rem;
   margin-bottom: 10px;
   font-weight: 200;
-  background-color:  rgba(0, 0, 0, 0.4); /* Naruto theme background color for labels */
+  background-color: rgb(9, 9, 9); /* Akatsuki theme background color for labels */
   display: inline-block;
   padding: 4px;
   border-radius: 10px;
@@ -290,15 +301,17 @@ body {
   height: auto;
   border-radius: 8px;
   transition: transform 0.3s ease;
+ 
 }
 
 .App.naruto .anime-logos img:hover {
   transform: scale(1.1);
 }
 
-/* Add your modern styling here for Naruto theme */
+/* Add your modern styling here for Akatsuki theme */
 
 .App.naruto .Quotes-Box {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -309,32 +322,35 @@ body {
   padding-right: 30px;
   padding-bottom: 40px;
   border-radius: 50px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 0, 0, 0.4);
   max-width: max-content;
 }
 
 .App.naruto .quote-container {
   text-align: center;
+  
 }
 
 .App.naruto .quote-box {
+  
   max-width: 600px;
   margin: auto;
   padding: 20px;
-  background-color: #333; /* Naruto theme background color for quote box */
-  border: 1px solid #222; /* Naruto theme border color for quote box */
+  background-color: #000; /* Akatsuki theme background color for quote box */
+  border: 1px solid #fff; /* Akatsuki theme border color for quote box */
   border-radius: 10px;
 }
 
 .App.naruto .quote-box h1 {
   font-size: 24px;
-  color: #ffffff; /* Naruto theme text color for quote box header */
+  color: #fff; /* Akatsuki theme text color for quote box header */
   border-bottom: #fff solid 1px;
   margin-bottom: 20px;
   padding-bottom: 10px;
 }
 
 .App.naruto .quote-box h2 {
+  font-family: "Permanent Marker", cursive;
   font-size: 18px;
   margin-bottom: 15px;
 }
@@ -356,25 +372,33 @@ body {
 
 .App.naruto .form-control:focus {
   outline: none;
-  border: 1px solid #d7d7d7; 
-  box-shadow: 0 0 5px #d7d7d7;
+  border: 1px solid #fff; 
+  box-shadow: 0 0 5px #fff;
 }
 
-.App.naruto .btn-primary,
-.App.naruto .btn-contribute {
-  background-color: #333; /* Naruto theme button background color */
-  border: 1px solid #222; /* Naruto theme border color for buttons */
+.App.naruto .btn-primary{
+  background-color: #180202; /* Akatsuki theme button background color */
+  border: 1px solid #fff; /* Akatsuki theme border color for buttons */
 }
 
-.App.naruto .btn-primary:hover,
-.App.naruto .btn-contribute:hover {
-  background-color: #585858; /* Naruto theme button background color on hover */
-  border: 1px solid #333; /* Naruto theme border color on hover */
+.App.naruto .btn-primary:hover{
+  background-color: #222; /* Akatsuki theme button background color on hover */
+  border: 1px solid #fff; /* Akatsuki theme border color on hover */
+}
+
+.App.naruto .btn-secondary {
+  background-color: #140505; /* Akatsuki theme button background color */
+  border: 1px solid #fff; /* Akatsuki theme border color for buttons */
+}
+
+.App.naruto .btn-secondary:hover {
+  background-color: #222; /* Akatsuki theme button background color on hover */
+  border: 1px solid #fff; /* Akatsuki theme border color on hover */
 }
 
 .App.naruto .footer {
   padding: 20px 0;
-  background-color: #1d1d1d; /* Naruto theme background color for footer */
+  background-color: #2b0000; /* Akatsuki theme background color for footer */
 }
 
 .App.naruto .footer-links a {
@@ -390,39 +414,189 @@ body {
 }
 
 .App.naruto .btn-contribute {
-  background-color: #333; /* Naruto theme button background color */
-  border: 1px solid #222; /* Naruto theme border color for contribute button */
+  background-color: #000; /* Akatsuki theme button background color */
+  border: 1px solid #fff; /* Akatsuki theme border color for contribute button */
 }
 
 .App.naruto .btn-contribute:hover {
-  background-color: #585858; /* Naruto theme button background color on hover */
-  border: 1px solid #333; /* Naruto theme border color on hover */
+  background-color: #585858; /* Akatsuki theme button background color on hover */
+  border: 1px solid #fff; /* Akatsuki theme border color on hover */
 }
 
 
 
 
 
+/* JJK THEME */
 
 
+.App.jjk {
+  background-image: url('https://wallpapercave.com/wp/wp6085065.jpg');
+  color: #fff;
+}
 
+.App.jjk .navbar {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
 
+.App.jjk .Modal,
+.App.jjk body {
+  font-weight: lighter;
+  background-color: rgba(0, 0, 0, 0.3); /* Jujutsu Kaisen theme background color for various elements */
+  color: #fff; /* Jujutsu Kaisen theme text color */
+  border: #2196F3 1px solid;
+}
 
+.App.jjk .theme-selector {
+  background-color: #2196F3; /* Jujutsu Kaisen theme background color for various elements */
+  color: #fff;
+  border: none;
+}
 
+.App.jjk .label {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 200;
+  background-color: rgba(34, 69, 107, 0.2);
+  border: #68b0eb 1px solid;
+  display: inline-block;
+  padding: 4px;
+  border-radius: 10px;
+}
 
+.App.jjk .anime-logos img {
+  width: 200px; /* Adjusted width for anime logos */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
 
+.App.jjk .anime-logos img:hover {
+  transform: scale(1.1);
+}
 
+/* Add your modern styling here for Jujutsu Kaisen theme */
 
+.App.jjk .Quotes-Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  border-radius: 50px;
+  background-color: rgba(0, 122, 255, 0.4); /* Blue color for Jujutsu Kaisen theme */
+  max-width: max-content;
+}
 
+.App.jjk .quote-container {
+  text-align: center;
+}
 
+.App.jjk .quote-box {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #FF4081; /* Jujutsu Kaisen theme background color for quote box */
+  border: 1px solid #fff; /* Jujutsu Kaisen theme border color for quote box */
+  border-radius: 10px;
+}
 
+.App.jjk .quote-box h1 {
+  font-size: 24px;
+  color: #fff; /* Jujutsu Kaisen theme text color for quote box header */
+  border-bottom: #fff solid 1px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
 
+.App.jjk .quote-box h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
 
+.App.jjk .input-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.App.jjk .form-control {
+  width: 200px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.App.jjk .form-control:focus {
+  outline: none;
+  border: 1px solid #fff; 
+  box-shadow: 0 0 5px #fff;
+}
 
+.App.jjk .btn-primary {
+  background-color: #2196F3; /* Blue color for Jujutsu Kaisen theme button background */
+  border: 1px solid #fff; /* Jujutsu Kaisen theme border color for buttons */
+}
 
+.App.jjk .btn-primary:hover {
+  background-color: #1565C0; /* Darker blue on hover for Jujutsu Kaisen theme button background */
+  border: 1px solid #fff; /* Jujutsu Kaisen theme border color on hover */
+}
 
+.App.jjk .btn-secondary {
+  background-color: #FF4081; /* Pink color for Jujutsu Kaisen theme button background */
+  border: 1px solid #fff; /* Jujutsu Kaisen theme border color for buttons */
+}
+
+.App.jjk .btn-secondary:hover {
+  background-color: #D81B60; /* Darker pink on hover for Jujutsu Kaisen theme button background */
+  border: 1px solid #fff; /* Jujutsu Kaisen theme border color on hover */
+}
+
+.App.jjk .btn-tertiary {
+  background-color: #FFEB3B; /* Yellow color for Jujutsu Kaisen theme button background */
+  border: 1px solid #fff; /* Jujutsu Kaisen theme border color for buttons */
+}
+
+.App.jjk .btn-tertiary:hover {
+  background-color: #FBC02D; /* Darker yellow on hover for Jujutsu Kaisen theme button background */
+  border: 1px solid #fff; /* Jujutsu Kaisen theme border color on hover */
+}
+
+.App.jjk .footer {
+  padding: 20px 0;
+  background-color: #4CAF50; /* Green color for Jujutsu Kaisen theme background color for footer */
+}
+
+.App.jjk .footer-links a {
+  text-decoration: none;
+}
+
+.App.jjk .footer-links img {
+  width: 100px; /* Adjusted width for footer links */
+}
+
+.App.jjk .footer-info p {
+  margin: 5px 0;
+}
+
+.App.jjk .btn-contribute {
+  background-color: #000; /* Jujutsu Kaisen theme button background color */
+  border: 1px solid #fff; /* Jujutsu Kaisen theme border color for contribute button */
+}
+
+.App.jjk .btn-contribute:hover {
+  background-color: #585858; /* Jujutsu Kaisen theme button background color on hover */
+  border: 1px solid #fff; /* Jujutsu Kaisen theme border color on hover */
+}
 
 
 
@@ -442,7 +616,4 @@ body {
 }
 .App.demonslayer {
   background-color: green; 
-}
-.App.jjk {
-  background-color: darkslateblue;
 }

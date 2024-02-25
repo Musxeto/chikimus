@@ -18,7 +18,6 @@ function App() {
         <Navbar />
         <ThemesModal onThemeChange={handleThemeChange} />
         <QuotesBody />
-        <p>Theme: {currentTheme}</p>
         <Footer />
       </div>
     </div>
