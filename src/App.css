@@ -423,7 +423,78 @@ body {
   border: 1px solid #fff; /* Akatsuki theme border color on hover */
 }
 
+@media screen and (max-width: 400px) {
+  .App.naruto .label {
+    font-size: 0.7rem;
+  }
 
+  .App.naruto .anime-logos img {
+    width: 60px;
+  }   
+  .App.naruto .Modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+
+    text-align: center;
+    min-width: max-content;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .App.naruto .theme-selector {
+    text-align: center;
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+  }
+
+  .App.naruto .label {
+    font-size: 0.7rem;
+  }
+
+  .App.naruto .anime-logos img {
+    width: 60px;
+  }
+  .App.naruto .Modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+
+    text-align: center;
+    min-width: max-content;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .App.naruto .label {
+    font-size: 0.9rem;
+  }
+  .App.naruto .quote-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .App.naruto .quote-box h1 {
+    font-size: 18px;
+  }
+  
+  .App.naruto .quote-box h2 {
+    font-size: 16px;
+    margin-bottom: 13px;
+  }
+}
 
 
 
@@ -432,6 +503,8 @@ body {
 
 .App.jjk {
   background-image: url('https://wallpapercave.com/wp/wp6085065.jpg');
+  background-position: right bottom; /* Set background position to top right */
+  background-size: cover; /* Cover the entire container with the background image */
   color: #fff;
 }
 
@@ -597,7 +670,80 @@ body {
   background-color: #585858; /* Jujutsu Kaisen theme button background color on hover */
   border: 1px solid #fff; /* Jujutsu Kaisen theme border color on hover */
 }
+/*jjk responsivness */
 
+@media screen and (max-width: 400px) {
+  .App.jjk .label {
+    font-size: 0.7rem;
+  }
+
+  .App.jjk .anime-logos img {
+    width: 60px;
+  }   
+  .App.jjk .Modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+
+    text-align: center;
+    min-width: max-content;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .App.jjk .theme-selector {
+    text-align: center;
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+  }
+
+  .App.jjk .label {
+    font-size: 0.7rem;
+  }
+
+  .App.jjk .anime-logos img {
+    width: 60px;
+  }
+  .App.jjk .Modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+
+    text-align: center;
+    min-width: max-content;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .App.jjk .label {
+    font-size: 0.9rem;
+  }
+  .App.jjk .quote-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .App.jjk .quote-box h1 {
+    font-size: 18px;
+  }
+  
+  .App.jjk .quote-box h2 {
+    font-size: 16px;
+    margin-bottom: 13px;
+  }
+}
 
 
 
