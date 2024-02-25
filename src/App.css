@@ -1249,22 +1249,241 @@ body {
 }
 
 
+/*N E O N    G E N E S I S   E V A N G E L IO N   T  H E M  E*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .App.evangelion {
-  background-color: red;
+  background-image: url('https://preview.redd.it/ever-wanted-shinjis-iconic-chair-pose-as-a-desktop-bg-well-v0-ji7og7e5mmfa1.png?auto=webp&s=1d7163e4e059d504b79bb8edcdda50d2043d4a0c');
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
+.App.evangelion .navbar {
+  background-color: rgba(57, 3, 55, 0.9); /* Dark purple color for navbar */
+  z-index: 1;
+}
+
+.App.evangelion .Modal,
+.App.evangelion body {
+  font-weight: lighter;
+  background-color: rgba(0, 17, 0, 0.7); /* Dark green color for background */
+  color: #fff;
+  border: #00FF00 1px solid; /* Green border color */
+}
+
+.App.evangelion .theme-selector {
+  background-color: #00FF00; /* Green color for theme selector */
+  color: #fff;
+  border: none;
+}
+
+.App.evangelion .label {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 200;
+  background-color: rgba(75, 0, 75, 0.7); /* Dark purple color for label background */
+  border: #FF00FF 1px solid; /* Purple border color */
+  display: inline-block;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.App.evangelion .anime-logos img {
+  width: 200px; /* Adjusted width for anime logos */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.App.evangelion .anime-logos img:hover {
+  transform: scale(1.1);
+}
+
+/* Add your modern styling here for Evangelion theme */
+
+.App.evangelion .Quotes-Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  border-radius: 50px;
+  background-color: rgba(128, 0, 128, 0.4); /* Dark purple color for Evangelion theme */
+  max-width: max-content;
+}
+
+.App.evangelion .quote-container {
+  text-align: center;
+}
+
+.App.evangelion .quote-box {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #008000; /* Dark green color for quote box */
+  border: 1px solid #fff; /* White border color for quote box */
+  border-radius: 10px;
+}
+
+.App.evangelion .quote-box h1 {
+  font-size: 24px;
+  color: #fff; /* White text color for quote box header */
+  border-bottom: #fff solid 1px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.App.evangelion .quote-box h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.App.evangelion .input-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App.evangelion .form-control {
+  width: 200px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App.evangelion .form-control:focus {
+  outline: none;
+  border: 1px solid #fff; 
+  box-shadow: 0 0 5px #fff;
+}
+
+.App.evangelion .btn-primary {
+  background-color: #00FF00; /* Green color for Evangelion theme button background */
+  border: 1px solid #fff; /* White border color for buttons */
+}
+
+.App.evangelion .btn-primary:hover {
+  background-color: #008000; /* Dark green on hover for Evangelion theme button background */
+  border: 1px solid #fff; /* White border color on hover */
+}
+
+.App.evangelion .btn-secondary {
+  background-color: #9400D3; /* Dark violet color for Evangelion theme button background */
+  border: 1px solid #fff; /* White border color for buttons */
+}
+
+.App.evangelion .btn-secondary:hover {
+  background-color: #4B0082; /* Indigo color on hover for Evangelion theme button background */
+  border: 1px solid #fff; /* White border color on hover */
+}
+
+.App.evangelion .footer {
+  padding: 20px 0;
+  background-color: #008000; /* Dark green color for Evangelion theme background color for footer */
+}
+
+.App.evangelion .footer-links a {
+  text-decoration: none;
+}
+
+.App.evangelion .footer-links img {
+  width: 100px; /* Adjusted width for footer links */
+}
+
+.App.evangelion .footer-info p {
+  margin: 5px 0;
+}
+
+.App.evangelion .btn-contribute {
+  background-color: #00FF00; /* Green color for Evangelion theme button background */
+  border: 1px solid #fff; /* White border color for contribute button */
+}
+
+.App.evangelion .btn-contribute:hover {
+  background-color: #008000; /* Dark green on hover for Evangelion theme button background */
+  border: 1px solid #fff; /* White border color on hover */
+}
+
+/* Evangelion theme responsiveness */
+
+@media screen and (max-width: 400px) {
+  .App.evangelion .label {
+    font-size: 0.7rem;
+  }
+
+  .App.evangelion .anime-logos img {
+    width: 60px;
+  }   
+
+  .App.evangelion .Modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: max-content;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .App.evangelion .theme-selector {
+    text-align: center;
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+  }
+
+  .App.evangelion .label {
+    font-size: 0.7rem;
+  }
+
+  .App.evangelion .anime-logos img {
+    width: 60px;
+  }
+
+  .App.evangelion .Modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: max-content;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .App.evangelion .label {
+    font-size: 0.9rem;
+  }
+
+  .App.evangelion .quote-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .App.evangelion .quote-box h1 {
+    font-size: 18px;
+  }
+  
+  .App.evangelion .quote-box h2 {
+    font-size: 16px;
+    margin-bottom: 13px;
+  }
+}
