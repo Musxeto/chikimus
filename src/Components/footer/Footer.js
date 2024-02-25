@@ -23,7 +23,7 @@ function Footer() {
                 Contribute
               </a>
               <a
-                href="https://linkedin.com/mustafa-gm"
+                href="https://linkedin.com/in/mustafa-gm"
                 target="_blank"
                 className="btn btn-outline-light btn-sm ml-2"
               >
