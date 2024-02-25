@@ -1008,6 +1008,13 @@ body {
   z-index: 1;
 }
 
+.App.demonslayer .gear-icon {
+  font-size: 2rem; 
+  color: rgba(20, 20, 20, 0.7); 
+  transition: transform 0.3s ease-in-out; 
+  margin-top: 3px;
+}
+
 .App.demonslayer .Modal,
 .App.demonslayer body {
   font-weight: lighter;
